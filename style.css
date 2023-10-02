@@ -1,0 +1,160 @@
+/* (mini) Reset do Css para resetar as propriedade mais comuns que são aplicadas pelo navecador, a fim de eliminar possiveis incompatibilidades entre navegadores. */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: initial;
+    font-weight: initial;
+    text-align: initial;
+}
+
+/* Estilos definitos para a pagina de documentação */
+
+body {
+    width: 90%;
+    margin: auto;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+h2 {
+    font-size: 26pt;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 22pt;
+
+}
+
+h4 {
+    font-size: 18pt;
+
+}
+p, table {
+    margin: 20px 0;
+
+}
+
+p {
+    line-height: 1,5;
+    font-size: 16pt;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+
+
+td, th {
+    font-size: 16pt;
+}
+
+tr:nth-child(odd) {
+    background-color: #d6f36c;
+}
+
+.container {
+    height: 500px;
+    background-color: rgb(80, 64, 43);
+    border: 5px solid #663939;
+}
+
+.contido {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(41, 66, 66);
+    border: 5px solid #2d2d57;
+}
+
+.display_flex {
+    display: flex;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+.justify_content_flex_end {
+    justify-content: flex-end ;
+}
+
+
+.justify_content_space_around {
+    justify-content: space-around ;
+}
+
+.justify_content_space_betwwen {
+    justify-content: space-between ;
+}
+
+.justify_content_space_evenly {
+    justify-content: space-evenly ;
+}
+ 
+.flex_direction_row {
+    flex-direction:row ;
+}
+
+.flex_direction_row_reverse {
+    flex-direction:row-reverse ;
+}
+
+.flex_direction_column {
+    flex-direction:column ;
+}
+
+.flex_direction_column_reverse {
+    flex-direction:column-reverse ;
+}
+
+.align_itens_normal {
+    align-items:normal ;
+}
+
+.align_itens_stretch {
+    align-items:stretch ;
+}
+
+.align_itens_center {
+    align-items:center ;
+}
+
+.align_itens_flex_start {
+    align-items:flex-start ;
+}
+
+.align_itens_flex_end {
+    align-items:flex-end ;
+}
+
+.align_itens_start {
+    align-items:start ;
+}
+
+.align_itens_end {
+    align-items:end ;
+}
+
+.align_itens_baseline {
+    align-items:baseline ;
+}
+
+.flex_wrap_nowrap {
+    flex-wrap:nowrap ;
+}
+.flex_wrap_wrap {
+    flex-wrap:wrap ;
+}
+.flex_wrap_wrap_reverse {
+    flex-wrap:wrap-reverse ;
+}
