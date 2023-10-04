@@ -1,440 +1,411 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox documentação</title>
+    <title>Flexbox-Documentação</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Dela+Gothic+One">
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Dela+Gothic+One" crossorigin>
+    <link href=https://fonts.google.com/specimen/Dela+Gothic+One" rel="stylesheet">
 </head>
 <body>
-
     <nav>
-        <ul>
-            <li id="topo"><a href="#justify-content">Justify_content</a></li>
-            <li><a href="#flex_direction">Flex_direction</a></li>
-            <li><a href="#align_itens">Align_itens</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
+        <div>
+            <h1><img height="200" src="https://github.com/Fenixsinedbr/Fenixsinedbr/assets/142617009/4e269c90-75ce-49c4-8a73-4abc9405b7a0"/>     Flexbox </h1>
+        </div>
 
-    <h1>Flexbox</h1>
-    
+        <div>
+            <div class="divAncoras">
+                <a href="#Display">  Display-flex</a>
+                <a href="#Justify_content">  Justify-content</a>
+                <a href="#Flex_direction">  Flex-direction</a>
+                <a href="#Align_items">  Align-items</a>
+                <a href="#Flex_wrap">  Flex-wrap</a>
+                <a href="#Flex_flow">  Flex-flow</a>
+                <a href="#Align_content">  Align_content</a>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Documentos</h2>
-
-    <h3>display: flex</h3>
-
-    <p class="descricao_propriedade">
-        A propriedade display flex deve ser a primeira a ser declarada no  CSS. A partir dela é que o CSS vai entender que precisa estilizar o conteúdo do contêiner com a Caixa Flexivel (Flexbox)
+   
+    <p class="descrição-propriedade">
+        A primeira propriedade que precisa ser declarada para que o Flexbox funcione!
     </p>
+    <p class="descricao-propriedade">Algumas propriedades como flex-direction, justify-content e align-content já vem com os valores padrão.</p>
 
-    <p>Exemplo</p>
+    <h1><img height="200" src="https://media.tenor.com/hQA6jk2FxwQAAAAC/ryu-hadouken.gif"/> </h1>
 
-    <!-- Abreviações Emmet:
-    p.container
-    p.contido
-                     -->
-    <div class="container display_flex">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
+    <!-- table>(tr>th*2)+tr*3>td.propriedade+td.valor -->
 
     <table>
-        <caption>Valores padrão das propriedades do Flexbox</caption>
         <tr>
-            <th class="propriedade"></th>
-            <td class="valor"></td>
+            <th></th>
+            <th></th>
         </tr>
         <tr>
-            <td class="propriedade"></td>
-            <td class="valor"></td>
+            <td class="propriedade">Propriedades</td>
+            <td class="valor">Valor</td>
         </tr>
         <tr>
-            <td class="propriedade"></td>
-            <td class="valor"></td>
+            <td class="propriedade">flex-direction</td>
+            <td class="valor">row</td>
+        </tr>
+        <tr>
+            <td class="propriedade">justify-content</td>
+            <td class="valor">flex-start</td>
         </tr>
         <tr>
             <td class="propriedade">align-content</td>
-            <td class="valor">flx-start</td>
+            <td class="valor">flex-start</td>
         </tr>
     </table>
 
-<h3 id="justify-content">justify-content:</h3>
 
-    <h4>center</h4>
+    
+    <section id="Display">
+    <h3>Exemplo de display:flex</h3>
 
-    <p class="descricao_propriedade">
-        A propriedade justify-content pode ser usada para justificar o conteudo do elemento conteiner em seu eixo primario, ou sweja, eixo x (row, row-reverse) ou eixo y (column, column-reverse).
-    </p>
-
-    <h4>Center</h4>
-
-    <p class="descricao_propriedade">
-        O valor "center" vai alinhar o conteudo ao centro do eixo primario.
-    </p>
-
-    <p>Exemplo:</p>
-
-    <div class="container display_flex justify_content_center">
+    <h1><img height="200" src="https://pics.livejournal.com/rampanthers/pic/00047243"/> </h1>
+    <div class="display-flex">
         <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
+        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
         <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
         <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
 
-    <h4>space-around</h4>
 
-    <p class="descricao_propriedade ">
-        O valor "space-around" vai alinhar o conteudo de forma espalhada sem encostar nas bordas.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex justify_content_space_around">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>flex_end</h4>
-
-    <p class="descricao_propriedade">
-        O valor "flex_end" vai alinhar o conteudo encostado na borda direita.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex justify_content_flex_end">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-   
-    <h4>space-betwwen</h4>
-
-    <p class="descricao_propriedade">
-        O valor "space-betwwen" vai alinhar o conteudo de forma espalhada encostando nas bordas.
-    </p>
-    <p>Exemplo</p>
-
-    <div class="container display_flex justify_content_space_betwwen">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>start</h4>
-
-    <p class="descricao_propriedade">
-        O valor "start" vai alinhar o conteudo encostado na borda a esquerta.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  justify_content_start">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
- 
-    <h4>space-evenly</h4>
-
-    <p class="descricao_propriedade">
-        O valor "space-evenly" vai alinhar o conteudo de forma espalhada sem encostar nas bordas porem com um espaçamento igual.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  justify_content_space_evenly">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-<h3 id="flex_direction">flex_direction</h3>
-
-<p class="descricao_propriedade">A propriedade flex-direction permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal.</p>
-
-    <h4>row</h4>
-
-    <p class="descricao_propriedade">
-    O valor "row" vai alinhars os itens flexíveis exibindo-os horizontalmente, como uma linha.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  flex_direction_row ">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>row_reverse</h4>
-
-    <p class="descricao_propriedade">
-    O valor "row_reverse" vai alinhar a linha, mas na ordem inversa.  
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  flex_direction_row_reverse">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>column</h4>
-
-    <p class="descricao_propriedade">
-    O valor "column" vai alinhar os itens flexíveis exibindo-os verticalmente, como uma coluna.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  flex_direction_column">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>column_reverse</h4>
-
-    <p class="descricao_propriedade">
-    O valor "column_reverse" vai alinhar os itens em coluna, mas na ordem inversa.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  flex_direction_column_reverse">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-<h3 id="align_itens">align_itens</h3>
-
-    <p class="descricao_propriedade">O valor "align_itens" controla o alinhamento de todos os itens no eixo transversal.</p>
-
-    <h4>Normal</h4>
-
-    <p class="descricao_propriedade">
-    O valor "Normal" se comporta como 'stretch' para itens flexbox e grid, ou 'start' para itens de grid com tamanho de bloco definido.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  align_itens_normal">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>stretch</h4>
-
-    <p class="descricao_propriedade">
-    O valor "stretch" estica os itens para caber no contêiner.  
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  align_itens_stretch">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>center</h4>
-
-    <p class="descricao_propriedade">
-    O valor "center" posiciona os itens no centro do contêiner.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  align_itens_center">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>flex_start</h4>
-
-    <p class="descricao_propriedade">
-    O valor "flex_start" posiciona os itens no início do contêiner.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  align_itens_flex_start">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>flex_end</h4>
-
-    <p class="descricao_propriedade">
-    O valor "flex_end" posiciona os itens no final do contêiner.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  align_itens_flex_end">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-    <h4>start</h4>
-
-    <p class="descricao_propriedade">
-    O valor "start" posiciona os itens no início de suas células individuais da grade, na direção do bloco.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  align_itens_start">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>end</h4>
-
-    <p class="descricao_propriedade">
-    O valor "end" posiciona os itens no final de suas células individuais da grade, na direção do bloco.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  align_itens_end">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>baseline</h4>
-
-    <p class="descricao_propriedade">        
-    O valor "baseline" posiciona os itens na linha de base do contêiner.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex align_itens_baseline">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-<h3 id="flex_wrap">flex_wrap</h3>  
-   
-<p class="descricao_propriedade">O valor "flex_wrap" define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas.</p>
-
-    <h4>flex_nowrap</h4>
-
-    <p class="descricao_propriedade">  
-    O valor "nowrap" especifica que os itens flexíveis não serão agrupados
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  flex_wrap">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4>wrap</h4>
-
-    <p class="descricao_propriedade">
-    O valor "wrap" especifica que os itens flexíveis serão agrupados, se necessário.
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  flex_wrap">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4></h4>
-
-    <p class="descricao_propriedade">
-    O valor "wrap_reverse" especifica que os itens flexíveis serão agrupados, se necessário, na ordem inversa.
-    </p>
-
-    <p>Exemplo</p>
-   
-    <div class="container display_flex  flex_wrap_wrap_reverse">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
-    </div>
-
-    <h4></h4>
-    <p class="descricao_propriedade">
        
-    </p>
-
-    <p>Exemplo</p>
-
-    <div class="container display_flex  ">
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
-        <div class="contido"> <img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
-        <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#topo">Topo da pagina</a></li>
-        </ul>
-    </nav>
+    </section>
 
+    <section id="Flex_direction">
+        <h2>Primeira Propriedade do display:flex = Flex-direction;</h2>
+        <h4>
+            Define um eixo principal (row [eixo X " _ " horizontal] ou column [eixo Y " | " vertical]) direcionando a ordem que os  elementos-filhos são alocados no container e aceita 4 valores (row, row-reverse, column e column-reverse, ).
+        </h4>
+
+        <h1><img height="200" src="https://static.wikia.nocookie.net/streetfighter/images/0/00/Ken-hadoken.gif/revision/latest/scale-to-width-down/170?cb=20160503174440&path-prefix=pl"/> </h1>
+
+    
+        <p><i>flex-direction: row</i></p>
+        <p>É o valor padrão: da esquerda para direita (12345) e da direita para esquerda (54321)</p>
+        <div class="flex-direction-row">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            
+        </div>
+
+        <p><i>flex-direction: row-reverse</i></p>
+        <P>Da direita para esquerda (12345) e da esquerda para direita (54321)</P>
+
+        <h1><img height="200" src="https://cdn.ome.lt/kwk2k6uxIRsi1QIRgndPY-ND6M8=/480x270/smart/uploads/conteudo/fotos/Sagat.gif"/> </h1>
+
+
+        <div class="flex-direction-row-reverse">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            
+            
+        </div>
+
+        <p><i>flex-direction: column</i></p>
+        <p>Mesmo padrão de row, mas no eixo vertical (de cima para baixo)</p>
+
+        <h1><img height="200" src="https://cdn.ome.lt/BEkBsZXwCGEv67wzGiWu6b2lm5Q=/770x0/smart/uploads/conteudo/fotos/Dhalsim.gif"/> </h1>
+
+
+        <div class="flex-direction-column">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+
+            
+        </div>
+    
+        <p><i>flex-direction: column-reverse</i></p>
+        <p>Mesmo padrão de row-reverse, mas no eixo vertical (de baixo para cima)</p>
+        <h1><img height="200" src="https://cdn.ome.lt/JpYWTabQW0J6dbAISu0T1g6zp_g=/770x0/smart/uploads/conteudo/fotos/Guile_Flash_Kick.gif"/> </h1>
+
+        <div class="flex-direction-column-reverse">
+            
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+        
+        </div>
+    </section>
+
+    <section id="Justify_content">
+        <h2>Segunda Propriedade do display-flex = Justify-content;</h2>
+        <h4>
+            Se comporta de acordo com o flex-direction (row - horizontal ou column - vertical) <p></p>
+            Sendo que seus valores (flex-start, flex-end, center) vão se direcionar no início, meio ou fim do eixo X (na horizontal) ou início, meio ou fim do eixo Y (na vertical).
+        </h4>
+
+        <p><i>justify-content: flex-start</i></p>
+        <p>Este é o valor padrão, os itens são direcionados no início do container.</p>
+
+        <h1><img height="200" src="https://www.sfrpg.com.br/wp-content/uploads/2009/03/apresamento.gif"/> </h1>
+
+        <div class="justifycontent-flex-start">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            
+        </div>
+
+        <h1><img height="200" src="https://www.sfrpg.com.br/wp-content/uploads/2016/02/combate-ryu-ken-juggernaut.gif"/> </h1>
+
+        <p><i>justify-content: flex-end</i></p>
+        <p>Os itens são direcionados no final do container.</p>
+        <div class="justifycontent-flex-end">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            >
+        </div>
+    
+        <p><i>justify-content: center</i></p>
+        <p>Os itens são centralizados ao longo do container</p>
+        <h1><img height="200" src="https://www.sfrpg.com.br/wp-content/uploads/2016/02/SagatVsDan.gif"/> </h1>
+
+        <div class="justifycontent-ce">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+           
+        </div>
+
+        <p><i>justify-content: space-around</i></p>
+        <p>Os itens são distribuídos uniformemente no container com  espaço igual ao seu redor (incluindo as margens laterais) </p>
+
+    <h1><img height="200" src="https://1.bp.blogspot.com/-NbeeRzojYjs/VQr1Z9HJBzI/AAAAAAAAOAo/zHFWTP4FywU/s1600/Sagat%2B13.gif"/> </h1>
+
+        <div class="justifycontent-sa">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            
+        </div>
+   
+        <p><i>justify-content: space-between</i></p>
+        <p>Os itens são distribuídos uniformemente no container (não incluindo as margens laterais)</p>
+
+
+        <h1><img height="200" src="https://1.bp.blogspot.com/-NbeeRzojYjs/VQr1Z9HJBzI/AAAAAAAAOAo/zHFWTP4FywU/s1600/Sagat%2B13.gif"/> </h1>
+
+
+
+        <div class="justifycontent-sb">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+           
+        </div>
+
+        <p><i>justify-content: space-evenly </i></p>
+        <p>Space-evenly adiciona um espaço ao redor de todos os elementos de forma igual, incluindo os das pontas.</p>
+
+        <h1><img height="200" src="https://i.pinimg.com/originals/a5/f6/ff/a5f6ffbb0f8e7927046d540d5d15ea40.gif"/> </h1>
+
+        <div class="justifycontent-se">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+           
+        </div>
+
+    </section>
+
+    <section id="Align_items">
+        <h2>Terceira Propriedade do display:flex = Align-items;</h2>
+        <h4>
+            Aqui, vamos abordar seus principais valores (flex-start, flex-end, center, stretch e baseline) sendo que seu valor padrão é o "stretch" que faz com que seus elementos estiquem para preencher o máximo de espaço que exixtir no container (desde que seu container não tenha uma altura definida).
+        </h4>
+
+        <p><i>align-items: flex-start</i></p>
+        <p>Deixa os itens alinhados no início do container</p>
+        <h1><img height="200" src=" https://media3.giphy.com/media/WLq5xLSELqBhK/200w.gif?cid=6c09b952knk2pipfkj8h5f7ysmv8r73yxrbhyh39c0vwuudl&ep=v1_gifs_search&rid=200w.gif&ct=g"/> </h1>
+
+        <div class="alignitems-flex-start">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            </div>
+           
+    
+        <p><i>align-items: flex-end</i></p>
+        <p>Deixa os itens alinhados no final do container</p>
+
+        <h1><img height="200" src=" https://i.pinimg.com/originals/14/eb/c8/14ebc88651f61d67a40047ebd563501d.gif"/> </h1>
+        <div class="alignitems-flex-end">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+        
+        </div>
+    
+        <p><i>align-items: center</i></p>
+        <p>Deixa todos os itens no centro do container</p>
+
+        <h1><img height="200" src=" https://media.tenor.com/1GaG6hKh0bIAAAAC/the-king-of-fighters-kof.gif"/> </h1>
+        <div class="alignitems-center">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            
+        </div>
+
+        <p><i>align-items: stretch</i></p>
+        <p>É o valor padrão, os itens se esticam para ocupar o espaço restante do container</p>
+
+        <h1><img height="200" src="https://giffiles.alphacoders.com/213/2136.gif"/> </h1>
+        <div class="alignitems-stretch">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+           
+        </div>
+  
+        <p><i>align-items: baseline</i></p>
+        <p>Alinha os itens de acordo com a linha base da tipografia</p>
+        <h1><img height="200" src="https://media.tenor.com/e0L-xR3JH34AAAAC/video-games-kof.gif"/> </h1>
+
+        <div class="alignitems-baseline">
+            <div class="contido3"><strong><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></strong></div>
+            <div class="contido3"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido3"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /></div>
+            <div class="contido2"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido4"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            
+        </div>
+    </section>
+
+    <section id="Flex_wrap">
+        <h2>Quarta Propriedade do display:flex = Flex-wrap;</h2>
+        <h4>
+            Define se os itens devem quebrar ou não a linha e por padrão não quebram, então você pode alterar isso e permitir que os itens sejam agrupados conforme necessário com esta propriedade.
+        </h4>
+   
+        <p><i>Flex-wrap: wrap</i></p>
+        <p>Faz uma quebra de linha para que os items caibam sem precisar se comprimirem</p>
+
+
+
+        <h1><img height="200" src="https://giffiles.alphacoders.com/213/2135.gif"/> </h1>
+
+        <div class="flexwrap-wrap">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            
+           
+        </div>
+   
+        <p><i>Flex-wrap: nowrap</i></p>
+        <p>Faz com que os elementos se comprimam até que caibam na mesma linha</p>
+
+        <h1><img height="200" src="https://i0.wp.com/25.media.tumblr.com/tumblr_mdcknyvhKq1rkrnmlo1_400.gif"/> </h1>
+        <div class="flexwrap-nowrap">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+          
+        </div>
+    
+        <p><i>Flex-wrap: wrap-reverse</i></p>
+        <p>Quebra a linha assim que um dos flex-itens não puder mais ser compactado. A quebra é na direção contrária, ou seja para a linha acima.</p>
+
+
+        <h1><img height="200" src=" https://giffiles.alphacoders.com/158/158541.gif"/> </h1>
+
+        <div class="flexwrap-wrap-reverse">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            
+        </div>
+
+        <section id="Flex_flow">
+    
+        <h2>Quinta Propriedade do display:flex = Flex-flow;</h2>
+        <h4>
+            Esta propriedade substitui as propriedades flex-direction e flex-wrap, que juntas definem os eixos x e y do flex container. O valor padrão é row nowrap.
+        </h4>
+    
+        <p><i>Flex-flow: row nowrap</i></p>
+        <p>Coloca o conteúdo em linha e não permite a quebra de linha</p>
+
+        <h1><img height="200" src=" https://2.bp.blogspot.com/-kIKXgUioFD0/WAGUZqikIuI/AAAAAAAAEbs/0pp27Zo7UMwIyGYBGXFEVsiq5YbcOujSgCLcB/s1600/mai-cvs-mebouncy.gif"/> </h1>
+
+        <div class="flex-flow">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            
+        </div>
+   
+        <p><i>Flex-flow: row wrap</i></p>
+        <p>Coloca o conteúdo em linha e permite a quebra de linha</p>
+
+        <h1><img height="200" src="https://1.bp.blogspot.com/-NbeeRzojYjs/VQr1Z9HJBzI/AAAAAAAAOAo/zHFWTP4FywU/s1600/Sagat%2B13.gif"/> </h1>
+
+
+        <div class="flex-flow-rowwrap">
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" /> </div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /></div>
+            <div class="contido"><img height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" /></div>
+            
+        </div>
+    </section>
 </body>
 </html>
+
+
+
+        
+<h1><img height="200" src="  https://media.tenor.com/T6KOiCnm9bgAAAAC/mortal-kombat.gif"/> </h1><h1><img height="200" src="https://pics.livejournal.com/rampanthers/pic/000437sk"/> </h1>
+    
+    
